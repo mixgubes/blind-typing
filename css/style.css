@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+/* helpers */
+
+.flex{
+    display: flex;
+}
+
+.center-space{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+/* helpers colors */
+
+.header-dark-mode{
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.body-dark-mode{
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.header-light-mode{
+    background-color: rgb(228, 228, 228);
+    color: rgb(17, 17, 17);
+}
+
+.body-light-mode{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.correct{
+    color: rgb(4, 116, 4);
+    background-color: rgba(0, 128, 0, 0.171);
+}
+
+.wrong{
+    color: rgb(116, 4, 4);
+    /* background-color: rgba(0, 128, 0, 0.171); */
+}
+
+/* header */
+
+header{
+    height: 30vh;
+}
+
+button{
+    height: 3.125rem;
+    width: 9.375rem;
+    background-color: rgb(182, 182, 182);
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: solid;
+}
+
+input{
+    opacity: 0;
+}
+
+/* main */
+
+main{
+    height: 60vh;
+}
+
+.letter{
+    width: 18.75rem;
+    height: 18.75rem;
+    font-size: 15.625rem;
+    border-radius: 3.125rem;
+    border: solid 0.625rem;
+}
+
+.theme{
+    font-size: 1.875rem;
+}
+
+@media (max-width: 760px){
+    header{
+        height: 10vh;
+    }
+
+    .letter{
+        width: 10.75rem;
+        height: 10.75rem;
+        font-size: 8.625rem;
+    }
+}

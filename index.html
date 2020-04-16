@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onclick="getFocus()" class="body-dark-mode center-center" onload="init()">
+    <header class="header-dark-mode flex center-space">
+        <div class="buttons">
+            <button class="cursor-pointer" onclick="onSetLanguage('English')">English</button>
+            <button class="cursor-pointer" onclick="onSetLanguage('Hebrew')">Hebrew</button>
+        </div>
+        <div onclick="onChangeTheme()" class="theme cursor-pointer">
+            💡
+        </div>
+    </header>
+    <main class="flex center-center">
+        <div class="letter flex center-center">
+
+        </div>
+    </main>
+    <input oninput="onKeyboardPress()" type="search">
+    <script src="js/main-service.js"></script>
+    <script src="js/main-controller.js"></script>
+</body>
+</html>
